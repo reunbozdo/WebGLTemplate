@@ -20,7 +20,7 @@
     <script>
 	window.getUserIdFromQuery = () => {
 		const params = new URLSearchParams(window.location.search);
-		return params.get('userId') || '';
+		return Number(params.get('userId'));
 	}
 	window.currentUserId = getUserIdFromQuery();
 	window.updateId = (userId) => {
