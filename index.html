@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
 
+    <script>
+	windows.getUserIdFromQuery = () => {
+		const params = new URLSearchParams(window.location.search);
+		return params.get('userId') || '';
+	}
+	window.currentUserId = getUserIdFromQuery();
+	window.updateId = (userId) => {
+	  const url = new URL(window.location);
+	  url.searchParams.set('userId', userId);
+	  window.history.pushState({}, '', url);
+	}
+	</script>
 	
   </head>
   <body>
