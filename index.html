@@ -18,7 +18,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <script>
-	windows.getUserIdFromQuery = () => {
+	window.getUserIdFromQuery = () => {
 		const params = new URLSearchParams(window.location.search);
 		return params.get('userId') || '';
 	}
