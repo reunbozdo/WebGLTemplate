@@ -1,9 +1,9 @@
-const cacheName = "reun-Snake-0.1";
+const cacheName = "reun-Snake-0.2";
 const contentToCache = [
-    "Build/WebGLTemplate0.1.loader.js",
-    "Build/WebGLTemplate0.1.framework.js.unityweb",
-    "Build/WebGLTemplate0.1.data.unityweb",
-    "Build/WebGLTemplate0.1.wasm.unityweb",
+    "Build/WebGLTemplate0.2.loader.js",
+    "Build/WebGLTemplate0.2.framework.js.unityweb",
+    "Build/WebGLTemplate0.2.data.unityweb",
+    "Build/WebGLTemplate0.2.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
